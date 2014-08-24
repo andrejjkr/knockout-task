@@ -1,0 +1,36 @@
+body{
+	font: 12pt sans-serif; 
+}
+h1{
+	font-size: 3em;
+	color: red;
+	margin:;
+}
+h3{
+	font-size: 1em;
+}
+/*.container*/
+.docs_list, .send_mail{
+	width: 49%;
+	float: left;
+}
+.send_mail{
+	padding-left: 15px;
+	border-left: 1px solid grey;
+}
+.send_mail input{
+	width: 75%;
+}
+.send_mail input:last-of-type{
+	height: 50px;
+}
+img{
+	width: 20px;
+	height: 20px;
+}
+button{
+	width: 20%;
+	height: 40px;
+	background: linear-gradient(to bottom, rgba(255,198,198,1) 0%,rgba(255,0,4,1) 100%);
+	color: white;
+}

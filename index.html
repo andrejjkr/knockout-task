@@ -7,16 +7,16 @@
 </head>
 <body>
 <div class="container">
-		<H1>Легкое использование существующих электронных документов (инструкций)</H1>
+		<h1>Легкое использование существующих электронных документов (инструкций)</h1>
 		<div class="docs_list">
 			<h2>Список литературы:</h2>
 			<ol class="list" data-bind="foreach: documents">
 				<li>
+					<img src="assets/images/Adobe_PDF.png" alt="/Adobe_PDF">
 					<input type="checkbox" data-bind="value: name, checked: $parent.selectedDocs"/>
 					<span data-bind="text: name"></span>
 				</li>
 			</ol>
-
 		</div>
 		<div class="send_mail">
 			<h2>Отправка письма:</h2>
@@ -33,9 +33,6 @@
 			<button onclick="displayResults();">Отправить</button> 
 		</div>
 	</div>
-
-
-
 	<script type="text/javascript" src="scripts/knockout-3.1.0.js"></script>
 	<script type="text/javascript" src="scripts/script.js"></script>
 </body>
