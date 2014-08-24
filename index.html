@@ -3,11 +3,36 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-
 	<title>knockout</title>
 </head>
 <body>
+<div class="container">
+		<H1>Легкое использование существующих электронных документов (инструкций)</H1>
+		<div class="docs_list">
+			<h2>Список литературы:</h2>
+			<ol class="list" data-bind="foreach: documents">
+				<li>
+					<input type="checkbox" data-bind="value: name, checked: $parent.selectedDocs"/>
+					<span data-bind="text: name"></span>
+				</li>
+			</ol>
 
+		</div>
+		<div class="send_mail">
+			<h2>Отправка письма:</h2>
+			<h3>E-mail:</h3>
+			<input data-bind="value: mail"/>
+			<h3>Тема:</h3>
+			<input data-bind="value: subject"/>
+			<h3>Текст сообщения:</h3>
+			<input data-bind="value: mailText"/>
+			<h3>Прикрепленные файлы:</h3>
+			<ol class="unstyled" data-bind="foreach: selectedDocs">
+				<li data-bind="text:$data"></li>
+			</ol>
+			<button onclick="displayResults();">Отправить</button> 
+		</div>
+	</div>
 
 
 
