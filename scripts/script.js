@@ -23,5 +23,5 @@ window.displayResults = function(){
     var subject = docVM.subject();
     var mailText = docVM.mailText();
     var selectedDocsName = docVM.selectedDocs().join('\n');
-    alert('E-mail: ' + mail + '\n' + 'Тема: '+subject+'\n'+'Текст сообщения: '+mail+'\n'+'Прикрепленные файлы: ' +'\n'+ selectedDocsName);
+    alert('E-mail: ' + mail + '\n' + 'Тема: '+ subject +'\n'+'Текст сообщения: '+ mailText +'\n'+'Прикрепленные файлы: ' +'\n'+ selectedDocsName);
 };
